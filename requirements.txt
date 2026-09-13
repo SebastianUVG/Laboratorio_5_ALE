@@ -1,0 +1,5 @@
+gymnasium[atari]>=1.2,<2
+moviepy>=2,<3
+numpy>=1.26,<3
+jupyterlab>=4,<5
+pytest>=8,<10
