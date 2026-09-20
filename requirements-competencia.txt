@@ -1,0 +1,4 @@
+-r requirements.txt
+stable-baselines3[extra]>=2.7,<3
+sb3-contrib>=2.7,<3
+matplotlib>=3.9,<4

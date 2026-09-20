@@ -3,4 +3,9 @@ __pycache__/
 .ipynb_checkpoints/
 .venv/
 *.py[cod]
-
+resultados_competencia/modelos/checkpoints/
+resultados_competencia/modelos/*replay_buffer*.pkl
+resultados_competencia/logs/tensorboard/
+*.docx 
+/resultados_competencia
+reporte_laboratorio_5.md

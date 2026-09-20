@@ -1,0 +1,4 @@
+iteracion,fecha,algoritmo,pasos,seed,learning_rate,buffer_size,batch_size,n_quantiles,exploration_fraction,exploration_final_eps,recompensa_promedio_eval,recompensa_maxima_eval,problemas,solucion,modelo
+1,,QR-DQN,100000,3092,0.00005,50000,32,200,0.025,0.01,,,,,baseline_validacion
+2,,QR-DQN,2000000,3092,0.00005,100000,32,200,0.025,0.01,,,,,checkpoint_intermedio
+3,,QR-DQN,10000000,3092,0.00005,100000,32,200,0.025,0.01,,,,,modelo_final
