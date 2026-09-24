@@ -1,0 +1,41 @@
+{
+  "fecha_inicio": "2026-09-15T10:38:28",
+  "configuracion": {
+    "env_id": "ALE/SpaceInvaders-v5",
+    "frameskip_ale": 1,
+    "frameskip_agente": 4,
+    "repeat_action_probability": 0.25,
+    "full_action_space": false,
+    "screen_size": 84,
+    "frame_stack": 4,
+    "noop_max": 30,
+    "total_timesteps": 4000000,
+    "learning_rate": 5e-05,
+    "buffer_size": 20000,
+    "learning_starts": 50000,
+    "batch_size": 32,
+    "gamma": 0.99,
+    "train_freq": 4,
+    "gradient_steps": 1,
+    "target_update_interval": 10000,
+    "exploration_fraction": 0.025,
+    "exploration_initial_eps": 1.0,
+    "exploration_final_eps": 0.01,
+    "n_quantiles": 200,
+    "max_grad_norm": 10.0,
+    "eval_freq": 100000,
+    "n_eval_episodes": 10,
+    "checkpoint_freq": 250000,
+    "seed": 3092,
+    "root": "resultados_competencia"
+  },
+  "versiones": {
+    "python": "3.12.9",
+    "torch": "2.14.0+cpu",
+    "gymnasium": "1.3.0",
+    "stable_baselines3": "2.9.0",
+    "sb3_contrib": "2.9.0"
+  },
+  "cuda_disponible": false,
+  "gpu": null
+}

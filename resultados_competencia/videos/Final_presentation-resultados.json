@@ -1,0 +1,21 @@
+{
+  "modelo": "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\Deep learning\\Laboratorio_5_ALE\\resultados_competencia\\modelos\\modelo_seleccionado.zip",
+  "seed_inicial": 826045522,
+  "puntajes": [
+    545.0,
+    1330.0,
+    575.0,
+    2055.0,
+    575.0
+  ],
+  "mejor_episodio": 4,
+  "mejor_puntaje": 2055.0,
+  "mejor_video": "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\Deep learning\\Laboratorio_5_ALE\\resultados_competencia\\videos\\Final_presentation-episode-3.mp4",
+  "videos": [
+    "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\Deep learning\\Laboratorio_5_ALE\\resultados_competencia\\videos\\Final_presentation-episode-0.mp4",
+    "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\Deep learning\\Laboratorio_5_ALE\\resultados_competencia\\videos\\Final_presentation-episode-1.mp4",
+    "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\Deep learning\\Laboratorio_5_ALE\\resultados_competencia\\videos\\Final_presentation-episode-2.mp4",
+    "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\Deep learning\\Laboratorio_5_ALE\\resultados_competencia\\videos\\Final_presentation-episode-3.mp4",
+    "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\Deep learning\\Laboratorio_5_ALE\\resultados_competencia\\videos\\Final_presentation-episode-4.mp4"
+  ]
+}
