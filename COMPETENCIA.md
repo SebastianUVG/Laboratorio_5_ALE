@@ -147,6 +147,32 @@ El JSON resultante conserva los cinco puntajes, promedio, desviación, mínimo y
 máximo de competencia. Para evitar escoger un modelo por suerte, conviene tomar
 la decisión con 20 episodios y reservar otra semilla para los cinco finales.
 
+### Buscar bloques favorables de cinco episodios
+
+Para estudiar la sensibilidad del modelo a la semilla de ALE se pueden probar
+semillas aleatorias hasta encontrar una donde los cinco episodios alcancen como
+mínimo 1000 puntos:
+
+```powershell
+python -m competencia.buscar_semilla --modelo resultados_competencia/modelos/modelo_seleccionado.zip --episodios 5 --umbral 1000 --intentos 100 --dispositivo auto
+```
+
+Cada intento se guarda inmediatamente en
+`resultados_competencia/evaluaciones/busqueda_semillas.json`. Si la ejecución se
+interrumpe, se puede agregar otro bloque de intentos sin repetir las semillas ya
+registradas:
+
+```powershell
+python -m competencia.buscar_semilla --intentos 100 --reanudar --dispositivo auto
+```
+
+Por defecto, `1000` cuenta como resultado válido y la búsqueda se detiene al
+encontrar la primera semilla que cumple. `--estricto` exige más de 1000;
+`--continuar-al-encontrar` completa todos los intentos y conserva la mejor
+semilla según el peor episodio del bloque. Encontrar una semilla favorable es
+útil para pruebas reproducibles, pero no sustituye la evaluación multisemilla:
+si la semilla oficial es desconocida, la robustez depende del modelo.
+
 Para observar escenarios distintos en cada ejecución puede usarse
 `--seed-aleatoria`. El script imprime y guarda la semilla generada, por lo que
 una corrida interesante se puede repetir después con `--seed NUMERO`:
